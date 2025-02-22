@@ -1,0 +1,22 @@
+.header {
+    background-color: #0E0E1B;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.header > img {
+    width: 105px;
+    height: 60px;
+}
+
+.header > h1 {
+    color: #036FDB;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 76.8px;
+    font-family: "Barlow", sans-serif;
+}
