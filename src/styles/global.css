@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #00274F;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-left: 65px;
+    margin-right: 65px;
+    gap: 30px;
+}

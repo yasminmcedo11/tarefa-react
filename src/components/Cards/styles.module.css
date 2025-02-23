@@ -1,0 +1,71 @@
+.container {
+    width: 921px;
+    padding: 40px;
+    background-color: #0E0E1B;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.topo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.perfil > img {
+    width: 73.4px;
+    height: 72.89px;
+    border-radius: 50%;
+    border: 5px solid #004B96;
+    color: #D9D9D9;
+}
+
+.perfil > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+.perfil > div > h2 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24.01px;
+    font-family: "Inter", sans-serif;
+    color: #FFFFFF;
+}
+
+.perfil > div > p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    font-family: "Inter", sans-serif;
+    color: #999999;
+}
+
+.tempo {
+    align-self: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    font-family: "Inter", sans-serif;
+    color: #FFFFFF;
+}
+
+.publicacao {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    font-family: "Inter", sans-serif;
+    color: #CCCCCC;
+    word-wrap: break-word;
+    overflow-wrap: break-word; 
+}
