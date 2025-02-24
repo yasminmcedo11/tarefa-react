@@ -1,7 +1,7 @@
 .feedback {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 25px;
 }
 
 .feedback > p {
@@ -24,7 +24,7 @@
     color: #000000;
 }
 
-.feedback button {
+.comentar {
     width: 139px;
     height: 47.89px;
     border-radius: 8px;
@@ -35,4 +35,5 @@
     font-family: "Inter", sans-serif;
     color: #FFFFFF;
     line-height: 19.36px;
+    cursor: pointer;
 }
