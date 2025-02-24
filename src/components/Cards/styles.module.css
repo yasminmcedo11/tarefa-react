@@ -14,6 +14,15 @@
     justify-content: space-between;
 }
 
+.topo > p {
+    align-self: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    font-family: "Inter", sans-serif;
+    color: #FFFFFF;
+}
+
 .perfil {
     display: flex;
     flex-direction: row;
@@ -51,14 +60,7 @@
     color: #999999;
 }
 
-.tempo {
-    align-self: center;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19.36px;
-    font-family: "Inter", sans-serif;
-    color: #FFFFFF;
-}
+
 
 .publicacao {
     font-size: 16px;

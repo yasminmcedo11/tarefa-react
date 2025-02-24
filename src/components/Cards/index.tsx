@@ -1,13 +1,14 @@
-import { useState } from "react"
 import CaixaFeedback from "../CaixaFeedback"
 import Comments from "../Comments"
 import styles from "./styles.module.css"
+import Time from "../Time"
 
 interface Comentario {
     nome: string
     foto: string
     texto: string
     likes: number
+    id: number
 }
 interface CardProps {
     foto: string
@@ -16,25 +17,11 @@ interface CardProps {
     publicacao: string
     key: number
     comentarios: Comentario[]
-    adicionarComentario: (comentario: Comentario) => void;
 }
 
-function showComments(props: CardProps) : boolean{
-    if ((props.comentarios).length === 0) {
-        return true
-    }
-    else {
-        return false
-    }
-}
 
 export default function Cards(props: CardProps) {
-    const [comentarios, setComentarios] = useState<any[]>([])
-
-    function adicionarComentario(novoComentario: { id: number; nome: string; texto: string; likes: number; foto: string }) {
-        setComentarios(prevComentarios => [...prevComentarios, novoComentario]);
-    }
-
+    const dataDePublicacao = new Date()
     return (
         <div className={styles.container}>
             <div className={styles.topo}>
@@ -45,10 +32,10 @@ export default function Cards(props: CardProps) {
                         <p>{props.cargo}</p>
                     </div>
                 </div>
-                <p className={styles.tempo}>Publicado há x horas</p>
+                <Time publicacaoData={dataDePublicacao}/>
             </div>
             <p className={styles.publicacao}>{props.publicacao}</p>
-            <CaixaFeedback {...props}/>
+            <CaixaFeedback/>
             {Array.isArray(props.comentarios) && props.comentarios.length > 0 && (
                 (props.comentarios).map((comentario) => (
                     <Comments 
@@ -56,6 +43,7 @@ export default function Cards(props: CardProps) {
                         texto={comentario.texto} 
                         likes={comentario.likes} 
                         foto={comentario.foto}
+                        id={comentario.id}
                     />
                 ))
             )}

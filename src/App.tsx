@@ -1,7 +1,6 @@
 import Cards from "./components/Cards";
 import Header from "./components/Header";
 import Profile from "./components/Profile";
-import fotoPerfil from "./assets/fotoPerfil.png"
 import fotoRicardo from "./assets/fotoRicardo.png"
 import fotoThais from "./assets/fotoThais.png"
 import fotoJessy from "./assets/fotoJessy.png"
@@ -12,6 +11,7 @@ interface Comentario {
   foto: string
   texto: string
   likes: number
+  id: number
 }
 interface Post {
   nome: string
@@ -43,13 +43,15 @@ export default function App() {
          nome: "Felyppe Nunes",
          texto: "Est aspernatur quis eos natus dicta et internos",
          likes: 2,
-         foto: fotoFelipe
+         foto: fotoFelipe,
+         id: 4
         },
         {
          nome: "Mellany Carter",
          texto: "Est aspernatur quis eos natus dicta et internos",
          likes: 3,
-         foto: fotoJessy
+         foto: fotoJessy,
+         id: 5
         }]
     },
   ];
