@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "./styles.module.css"
-import fotoPerfil from "./assets/fotoPerfil.png"
+import fotoPerfil from "../../assets/fotoPerfil.png"
 
 interface Comentario {
     nome: string
